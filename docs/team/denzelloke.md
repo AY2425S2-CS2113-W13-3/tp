@@ -13,7 +13,7 @@ I focused on improving the user experience and robustness of FinBro by introduci
 
 ### Code Contributed
 
-[View my code on tP Code Dashboard](https://nus-cs2113-ay2425s2.github.io/tp-dashboard/?search=denzellee)
+[View my code on tP Code Dashboard](https://nus-cs2113-ay2425s2.github.io/tp-dashboard/?search=denzelloke)
 
 ---
 
@@ -43,6 +43,11 @@ I focused on improving the user experience and robustness of FinBro by introduci
 5. **Search Feature**
    * Developed `SearchCommand` for keyword-based transaction lookup
    * Supports interactive prompt and case-insensitive matching in descriptions
+
+
+6. **Test Implementation**
+    * Developed `ParserTest.java` for automatic testing
+    * Increased test coverage for interactive commands (`IncomeCommandTest.java`, `ExpenseCommandTest.java`, `SearchCommandTest.java`, `EditCommandTest.java`)
 
 ---
 
@@ -79,7 +84,10 @@ I focused on improving the user experience and robustness of FinBro by introduci
 - Reviewed PRs related to CLI enhancements and parsing changes
 - Provided feedback on improving error messaging and validating corner cases
 - Helped teammate troubleshoot category parsing logic and recursive confirmation prompts
-
+- Conducted code reviews to maintain code quality standards
+- Helped teammates resolve technical challenges, particularly with defensive exception handling
+- [Link to example PR review](https://github.com/AY2425S2-CS2113-W13-3/tp/pull/171)
+<div style="page-break-after: always;"></div>
 ---
 ## Contributions to the Developer Guide (Extracts)
 
@@ -221,3 +229,13 @@ Enter keyword or string to search:
 > grocery lunch
 ```
 ---
+## 4. Additional Testing Contributions
+
+- **Enhanced Parser Test Suite (`ParserTest.java`):**
+    - Expanded unit tests significantly, covering detailed input scenarios and edge cases for commands like `income`, `expense`, `setbudget`, `setsavings`, `filter`, `export`, and `clear`.
+    - Implemented `createUiWithInputs`, a custom helper method to simulate realistic user input sequences, improving reliability and robustness in command parsing tests.
+
+- **Comprehensive Command Testing:**
+    - Developed thorough test coverage for interactive commands (`IncomeCommandTest.java`, `ExpenseCommandTest.java`, `SearchCommandTest.java`, `EditCommandTest.java`) to ensure proper handling of user interactions and input validations.
+    - Verified defensive programming measures through targeted unit tests, ensuring graceful handling of invalid inputs and user errors.
+
