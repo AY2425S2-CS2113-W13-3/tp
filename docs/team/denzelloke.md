@@ -39,6 +39,7 @@ I focused on improving the user experience and robustness of FinBro by introduci
    * Built an index-based selection system for expense categories in `parseCategory(Ui ui)`
    * Improves discoverability and consistency of category assignment
 
+<div style="page-break-after: always;"></div>
 
 5. **Search Feature**
    * Developed `SearchCommand` for keyword-based transaction lookup
@@ -92,6 +93,11 @@ I focused on improving the user experience and robustness of FinBro by introduci
 ## Contributions to the Developer Guide (Extracts)
 
 ### Searching for a transaction
+
+#### PUML Version
+![Searching for a Transaction Sequence Diagram](../img/puml/sequence-search.png)
+
+#### Mermaid Version
 ```mermaid
 sequenceDiagram
     participant User
@@ -133,6 +139,7 @@ sequenceDiagram
     deactivate FinBro
 
 ```
+<div style="page-break-after: always;"></div>
 
 ---
 ## Contributions to the User Guide (Extracts)
@@ -229,13 +236,15 @@ Enter keyword or string to search:
 > grocery lunch
 ```
 ---
-## 4. Additional Testing Contributions
+<div style="page-break-after: always;"></div>
 
-- **Enhanced Parser Test Suite (`ParserTest.java`):**
-    - Expanded unit tests significantly, covering detailed input scenarios and edge cases for commands like `income`, `expense`, `setbudget`, `setsavings`, `filter`, `export`, and `clear`.
-    - Implemented `createUiWithInputs`, a custom helper method to simulate realistic user input sequences, improving reliability and robustness in command parsing tests.
+### 4. Additional Testing Contributions
 
-- **Comprehensive Command Testing:**
-    - Developed thorough test coverage for interactive commands (`IncomeCommandTest.java`, `ExpenseCommandTest.java`, `SearchCommandTest.java`, `EditCommandTest.java`) to ensure proper handling of user interactions and input validations.
-    - Verified defensive programming measures through targeted unit tests, ensuring graceful handling of invalid inputs and user errors.
+**Enhanced Parser Test Suite (`ParserTest.java`):**
+* Expanded unit tests significantly, covering detailed input scenarios and edge cases for commands like `income`, `expense`, `setbudget`, `setsavings`, `filter`, `export`, and `clear`.
+* Implemented `createUiWithInputs`, a custom helper method to simulate realistic user input sequences, improving reliability and robustness in command parsing tests.
+
+**Comprehensive Command Testing:**
+* Developed thorough test coverage for interactive commands (`IncomeCommandTest.java`, `ExpenseCommandTest.java`, `SearchCommandTest.java`, `EditCommandTest.java`) to ensure proper handling of user interactions and input validations.
+* Verified defensive programming measures through targeted unit tests, ensuring graceful handling of invalid inputs and user errors.
 
